@@ -1,9 +1,0 @@
-{
-    "//": "Root configuration to handle frontend subdirectory",
-    "rewrites": [
-        {
-            "source": "/(.*)",
-            "destination": "/frontend/$1"
-        }
-    ]
-}
