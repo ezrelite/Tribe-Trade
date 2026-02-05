@@ -1,100 +1,111 @@
-# 🛡️ Tribe Trade
+# Tribe Trade
 
-**The safest campus marketplace powered by TribeGuard Escrow.**
+**The definitive campus marketplace secured by TribeGuard Escrow.**
 
-Tribe Trade is a modern, high-performance marketplace designed specifically for campus ecosystems. It bridges the gap between students ("Citizens") and student entrepreneurs ("Plugs") with a focus on trust, visual excellence, and secure transactions.
-
----
-
-## ✨ Key Features
-
--   **🛡️ TribeGuard Escrow**: Secure, real-time protection for every trade. Funds are held by the Tribe Council until the buyer confirms receipt.
--   **🔌 Roles (Citizen & Plug)**: Specialized dashboards for buyers to hunt drops and sellers to manage their hustle.
--   **💎 Premium Liquid Glass UI**: A state-of-the-art, glassmorphic interface built with Framer Motion for smooth, premium interactions.
--   **💰 Integrated Wallet**: Real-time tracking of escrow balances and available earnings with seamless payout requests.
--   **📦 Hustle HQ**: A powerful dashboard for sellers (Plugs) to manage inventory, analyze performance, and launch "Awoof" drops.
--   **⚖️ Dispute Center**: Built-in mediation handled by the Tribe Council to ensure fairness across all trades.
+Tribe Trade is a high-performance marketplace engineered specifically for campus ecosystems. It establishes a trusted bridge between student buyers and entrepreneurs through a focus on security, visual excellence, and seamless transaction management.
 
 ---
 
-## 🛠️ Technology Stack
+## Key Features
+
+**TribeGuard Escrow**
+Transaction security is handled by an integrated escrow system. Funds are held securely by the Tribe Council and only released once the buyer confirms satisfactory receipt of the product.
+
+**Specialized User Roles**
+The platform offers tailored experiences for Citizens (buyers) and Plugs (sellers). Each role features a dedicated dashboard designed to optimize their specific journey within the marketplace.
+
+**Premium Liquid Glass Interface**
+A state-of-the-art glassmorphic UI built with React and Framer Motion. The interface provides a premium, responsive experience with smooth micro-interactions that elevate the standard of campus commerce.
+
+**Integrated Financial Management**
+The built-in Wallet allows users to track escrow balances, monitor available earnings, and initiate payout requests through a streamlined interface.
+
+**Hustle HQ Dashboard**
+A comprehensive command center for sellers to manage inventory, analyze sales performance, and launch promotional "Awoof" drops for maximum visibility.
+
+**Centralized Dispute Resolution**
+A dedicated mediation system handled by the Tribe Council ensures that every trade is fair and that conflicts are resolved with transparency and speed.
+
+---
+
+## Technical Architecture
 
 ### Backend
--   **Django (Python)**: Robust API and business logic.
--   **Django Rest Framework (DRF)**: Seamless API endpoints.
--   **SQLite**: Reliable local database (designed to be replaceable for production).
--   **Flutterwave Integration**: Secure payment processing.
+- **Django**: Powers the core business logic and API infrastructure.
+- **Django Rest Framework**: Provides a clean, standardized interface for frontend communication.
+- **SQLite**: Utilized for reliable local data persistence.
+- **Flutterwave**: Integrated for secure, multi-method payment processing.
 
 ### Frontend
--   **React + Vite**: High-performance single-page application.
--   **Tailwind CSS**: Modern, responsive styling.
--   **Framer Motion**: Smooth glassmorphic animations and micro-interactions.
--   **Lucide React**: Clean, consistent iconography.
+- **React and Vite**: Delivers a fast, modular single-page application experience.
+- **Tailwind CSS**: A utility-first framework for precise, responsive styling.
+- **Framer Motion**: Enables complex animations and the signature glassmorphic aesthetic.
+- **Lucide**: A consistent, professional iconography set.
 
 ---
 
-## 🚀 Getting Started
+## Installation and Setup
 
 ### Prerequisites
--   Python 3.10+
--   Node.js 18+
+- Python 3.10 or higher
+- Node.js 18 or higher
 
-### 1. Project Setup
-Clone the repository and enter the root directory:
+### Initialization
+Begin by cloning the repository and navigating to the project root:
 ```bash
 git clone https://github.com/ezrelite/Tribe-Trade.git
 cd Tribe-Trade
 ```
 
-### 2. Backend Installation
-1.  Create and activate a virtual environment:
-    ```bash
-    python -m venv venv
-    .\venv\Scripts\activate  # Windows
-    source venv/bin/activate # Linux/Mac
-    ```
-2.  Install dependencies:
-    ```bash
-    pip install -r requirements.txt
-    ```
-3.  Configure environment variables:
-    -   Create a `.env` file in the root based on [.env.example](.env.example).
-    -   Add your `DJANGO_SECRET_KEY` and Flutterwave keys.
-4.  Run migrations and start the server:
-    ```bash
-    python manage.py migrate
-    python manage.py runserver
-    # Or use the helper: .\run_backend.bat
-    ```
+### Backend Configuration
+1. **Initialize the Virtual Environment:**
+   ```bash
+   python -m venv venv
+   .\venv\Scripts\activate  # Windows
+   source venv/bin/activate # Linux/Mac
+   ```
+2. **Install Dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. **Environment Setup:**
+   - Create a `.env` file in the root directory.
+   - Refer to `.env.example` for required variables, including your Django secret key and Flutterwave credentials.
+4. **Launch the Server:**
+   ```bash
+   python manage.py migrate
+   python manage.py runserver
+   # Alternatively, use the provided helper: .\run_backend.bat
+   ```
 
-### 3. Frontend Installation
-1.  Navigate to the frontend directory:
-    ```bash
-    cd frontend
-    ```
-2.  Install dependencies:
-    ```bash
-    npm install
-    ```
-3.  Start the development server:
-    ```bash
-    npm run dev
-    # Or use the helper from root: .\run_frontend.bat
-    ```
-
----
-
-## 🤝 Contributing
-Welcome to the Tribe! If you want to improve the marketplace:
-1.  Fork the repository.
-2.  Create a feature branch (`git checkout -b feature/AmazingFeature`).
-3.  Commit your changes (`git commit -m 'Add some AmazingFeature'`).
-4.  Push to the branch (`git push origin feature/AmazingFeature`).
-5.  Open a Pull Request.
+### Frontend Configuration
+1. **Navigate to the Frontend Directory:**
+   ```bash
+   cd frontend
+   ```
+2. **Install Dependencies:**
+   ```bash
+   npm install
+   ```
+3. **Start the Development Server:**
+   ```bash
+   npm run dev
+   # Alternatively, use the provided helper from the root: .\run_frontend.bat
+   ```
 
 ---
 
-## 📄 License
-This project is licensed under the MIT License - see the LICENSE file for details.
+## Contribution Guidelines
+The Tribe Trade project welcomes contributions from the community. If you are interested in improving the platform:
+1. Fork the repository.
+2. Create a specific feature branch for your work.
+3. Commit your changes with clear, descriptive messages.
+4. Push your branch to the remote repository.
+5. Open a Pull Request for review.
 
-Developed for the Tribe. 🛡️✨
+---
+
+## License
+This project is licensed under the MIT License. Refer to the LICENSE file for full details.
+
+Developed for the Tribe.
